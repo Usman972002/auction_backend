@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
 // Create Socket.IO instance
 const io = socketIo(server, {
     cors: {
-        origin: ['http://localhost:3000'], // Adjust the origin to match your frontend URL
+        origin: ['http://localhost:3000','https://auction-frontend-nu.vercel.app/'], // Adjust the origin to match your frontend URL
         credentials: true,
     },
 });
